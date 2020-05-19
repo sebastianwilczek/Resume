@@ -1,54 +1,5 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% This is a modified ONE COLUMN version of
-% the following template:
-%
-% Deedy - One Page Two Column Resume
-% LaTeX Template
-% Version 1.1 (30/4/2014)
-%
-% Original author:
-% Debarghya Das (http://debarghyadas.com)
-%
-% Original repository:
-% https://github.com/deedydas/Deedy-Resume
-%
-% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
-%
-% This template uses several fonts not included with Windows/Linux by
-% default. If you get compilation errors saying a font is missing, find the line
-% on which the font is used and either change it to a font included with your
-% operating system or comment the line out to use the default font.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% TODO:
-% 1. Integrate biber/bibtex for article citation under publications.
-% 2. Figure out a smoother way for the document to flow onto the next page.
-% 3. Add styling information for a "Projects/Hacks" section.
-% 4. Add location/address information
-% 5. Merge OpenFont and MacFonts as a single sty with options.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% CHANGELOG:
-% v1.1:
-% 1. Fixed several compilation bugs with \renewcommand
-% 2. Got Open-source fonts (Windows/Linux support)
-% 3. Added Last Updated
-% 4. Move Title styling into .sty
-% 5. Commented .sty file.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% Known Issues:
-% 1. Overflows onto second page if any column's contents are more than the
-% vertical limit
-% 2. Hacky space on the first bullet point on the second column.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \documentclass[]{deedy-resume-openfont}
-
-    \begin{document}
+\documentclass[]{deedy-resume-openfont}
+\begin{document}
     
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -56,6 +7,8 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \namesection{Sebastian}{Wilczek}{sebastian.wilczek@protonmail.com | +49 1525 4307633 \\ Bonhoefferstr. 32, Neukirchen-Vluyn, Germany}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     Education
@@ -65,35 +18,50 @@
 \section{Education}
 \raggedright
 
-\runsubsection{Fontys University of Applied Sciences}\descript{| BSc Software Engineering}\\ \location{Venlo, The Netherlands | Sep 2015 - Jun 2019}\\
-Graduated Cum Laude\\
-\sectionsep
-  
-
 \runsubsection{University of Amsterdam}\descript{| MSc Security \& Network Engineering}\\ \location{Amsterdam, The Netherlands | Sep 2019 - Jun 2020}\\
     
 \sectionsep
+
+\runsubsection{Fontys University of Applied Sciences}\descript{| BSc Software Engineering}\\ \location{Venlo, The Netherlands | Sep 2015 - Jun 2019}\\
+Graduated Cum Laude\\
+
+\sectionsep
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     Experience
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Experience}
-\runsubsection{codecentric AG}\descript{| Software Engineering Intern}\\ \location{Solingen, Germany | Sep 2017 – Jan 2018}
-\begin{tightemize}
-	\item Created a File Sharing Platform with React Frontend and Java Middleware based on existing File Storage Infrastructure
-\end{tightemize}
-\sectionsep
-\runsubsection{codecentric AG}\descript{| Working Student Digital Integration}\\ \location{Solingen, Germany | Aug 2018 – Jan 2019}
-\begin{tightemize}
-	\item Maintained AWS EC2 instances and developed various C\# and Java plugins to be deployed on AWS
-\end{tightemize}
-\sectionsep
+
 \runsubsection{Instana}\descript{| Software Engineering Intern}\\ \location{Solingen, Germany | Feb 2019 – Jun 2019}
 \begin{tightemize}
-	\item Centralized a Billing component of a SaaS backend to decrease resource consumption and running costs by uniting Kafka streams and improving process throughput
+	\item Centralized a Billing component of a SaaS backend to decrease resource consumption and running costs by uniting Kafka streams and improving process throughput.
+	\item Used existing Apache Kafka, Docker and CockroachDB infrastructure to extend and redevelop existing and new Java backend applications.
+	\item Gathered requirements from engineering and site reliability teams, combining requirements from various DevOps engineers.
 \end{tightemize}
+
 \sectionsep
+
+\runsubsection{codecentric AG}\descript{| Working Student Digital Integration}\\ \location{Solingen, Germany | Aug 2018 – Jan 2019}
+\begin{tightemize}
+	\item Maintained AWS EC2 instances and developed various C\# and Java plugins to be deployed on AWS.
+	\item Automated and refactored AWS EC2 instances as per requirements of software engineers in the same team.
+\end{tightemize}
+
+\sectionsep
+
+\runsubsection{codecentric AG}\descript{| Software Engineering Intern}\\ \location{Solingen, Germany | Sep 2017 – Jan 2018}
+\begin{tightemize}
+	\item Developed a File Sharing Platform for sharing files temporarily in a project team with three other members, was responsible for a new React Frontend and Java Middleware with PostgreSQL database deployed on AWS EC2.
+	\item Took part in goal-boxed sprint meetings and performed requirements engineering in cooperation with team members and stakeholders.
+\end{tightemize}
+
+\sectionsep
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     Skills
@@ -116,34 +84,22 @@ Graduated Cum Laude\\
 \section{Projects}
 \raggedright
 
-\runsubsection{\large{CenterShare}}
-\descript{| Java, React, PostgreSQL, AWS EC2}\\
-Developed a File Sharing Platform for sharing files temporarily by making use of existing Infrastructure and creating new Middleware\\
-\sectionsep
-  
 
 \runsubsection{\large{Firefighting VR Simulation}}
-\descript{| Unity, JavaScript, Oculus Rift, 3D scanning and modelling tools}\\
-Created a VR Simulation of Firefighting within inaccessible environments (Hospitals) by using 3D scanning and modelling techniques and improving interactibility\\
-\sectionsep
-  
-
-\runsubsection{\large{Cashier}}
-\descript{| Java, Apache Kafka, CockroachDB, Docker}\\
-Re-developed a backend component responsible for SaaS billing\\
+\descript{| Unity, JavaScript, Oculus Rift, 3D scanning and modeling tools}\\
+Created a VR Simulation of Firefighting within inaccessible environments (Hospitals) by using 3D scanning and modeling techniques and improving intractability\\
 \sectionsep
   
 
 \runsubsection{\large{CAN Bus Security Evaluation}}
 \descript{| C, Arduino, CAN Bus}\\
-Evaluated the security of vehicle CAN busses and proposed integrity schemes, in cooperation with Deloitte\\
+Evaluated the security of vehicle CAN buses and proposed integrity schemes, in cooperation with Deloitte\\
 \sectionsep
   
 
 \runsubsection{\large{Various smartphone apps}}
 \descript{| JavaScript, Firebase, React Native, Node.js, GraphQL, Expo}\\
-Extensively familiarized with Smartphone development, developing apps such as Social Networks and Sport Team Management\\
+Extensively familiarized with Smartphone app development, developing apps such as Social Networks and Sport Team Management\\
 \sectionsep
 
-\ 
 \end{document}
